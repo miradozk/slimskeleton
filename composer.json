@@ -1,0 +1,23 @@
+{
+    "name": "meradoou/slimskeleton",
+    "description": "Un skeleton pour démarrer un projet Slim 3",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Mirado",
+            "email": "me.radoou@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^3.0",
+        "j4mie/idiorm": "^1.5",
+        "symfony/var-dumper": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Meradoou\\Skeleton\\": [
+                "./src/"
+            ]
+        }
+    }
+}
