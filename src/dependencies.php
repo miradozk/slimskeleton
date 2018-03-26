@@ -1,12 +1,13 @@
 <?php
 use \Meradoou\Skeleton\Helper\Database;
+use \Meradoou\Skeleton\Helper\View;
 
 /**
  * Middleware
  *
  */
 
-// Session
+// Database
 $application->add(new Database());
 
 /**
@@ -14,3 +15,8 @@ $application->add(new Database());
  *
  */
 $services = $application->getContainer();
+
+// View
+$services['view']  = function ($container) {
+    return new View($container);
+};

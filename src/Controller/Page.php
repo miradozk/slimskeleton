@@ -21,6 +21,6 @@ class Page extends Controller
      */
     public function showHome(Request $request, Response $response)
     {
-        return $this->html('home.php');
+        return $this->view->html('home.php');
     }
 }
